@@ -2,8 +2,9 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
+import { ThemeProvider } from '@/context/Theme';
 
-export default function RootLayout() {
+function MainLayout() {
 
   return (
     <SafeAreaView style={style.container}>
@@ -13,6 +14,14 @@ export default function RootLayout() {
       </Stack>
     </SafeAreaView>
   );
+}
+
+export default function RootLayout() {
+  return (
+    <ThemeProvider>
+      <MainLayout />
+    </ThemeProvider>
+  )
 }
 
 const style = StyleSheet.create({
