@@ -8,8 +8,8 @@ export default function RootLayout() {
   return (
     <SafeAreaView style={style.container}>
       <StatusBar style="dark" />
-      <Stack>
-        <Stack.Screen name='index' options={{headerShown: true}} />
+      <Stack screenOptions={{headerShown: false}}>
+        <Stack.Screen name='auth/index' />
       </Stack>
     </SafeAreaView>
   );
