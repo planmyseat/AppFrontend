@@ -27,7 +27,7 @@ const Auth = () => {
 
             <View style={{ position: "relative", height: "100%" }}>
                 <View style={styles.bottomSheet}>
-                    {islogin ? <Login setIsLogin={setIsLogin} /> : <Signup />}
+                    {islogin ? <Login setIsLogin={setIsLogin} /> : <Signup setIsLogin={setIsLogin} />}
                 </View>
             </View>
         </View>

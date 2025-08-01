@@ -7,7 +7,7 @@ type props = {
     setIsLogin: Dispatch<SetStateAction<boolean>>
 }
 
-const Login = ({setIsLogin}: props) => {
+const Signup = ({setIsLogin}: props) => {
 
     const {isDark} = useTheme()
     const styles = createStyle(isDark)
@@ -61,4 +61,4 @@ const Login = ({setIsLogin}: props) => {
     );
 };
 
-export default Login;
+export default Signup;
