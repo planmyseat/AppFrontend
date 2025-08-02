@@ -37,6 +37,9 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+     "extra": {
+      "API_URL": "http://10.227.171.227:5000/api"
     }
   }
 }

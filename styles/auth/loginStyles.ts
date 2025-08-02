@@ -9,6 +9,12 @@ export const createStyle = (isDark: boolean) => {
                 paddingHorizontal: 30,
                 paddingTop: 50,
             },
+            errorText:{
+                color: "red",
+                fontSize: 16,
+                marginTop: 10,
+                textAlign: "center",
+            },
             title: {
                 fontSize: 30,
                 color: isDark ? '#ffffff' : "#000",
