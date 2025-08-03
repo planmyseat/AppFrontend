@@ -30,7 +30,7 @@ export default function ResetPasswordScreen() {
       const success = await resetPassword(password);
       if (success) {
         Alert.alert("Success", "Password reset successfully!");
-        router.push("/auth/auth"); 
+        router.push("/home/block"); 
       } else {
         Alert.alert("Error", "Failed to reset password. Please try again.");
       }
